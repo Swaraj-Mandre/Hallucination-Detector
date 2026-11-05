@@ -1,0 +1,8 @@
+torch==2.13.0
+transformers==5.22.1
+diffusers==0.42.1
+accelerate==1.15.0
+gradio==6.31.0
+spaces==0.51.3
+pillow==12.3.0
+matplotlib==3.11.2
