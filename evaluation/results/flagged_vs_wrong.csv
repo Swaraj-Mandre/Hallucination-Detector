@@ -1,0 +1,21 @@
+No,Type,Question,Best answer,Agreement,Flagged,Actually wrong,Outcome
+1,common,What is the chemical symbol for gold?,The chemical symbol for gold is Au.,0.99,No,No,Correct pass
+2,common,Who wrote the novel Pride and Prejudice?,Jane Austen wrote the novel Pride and Prejudice.,0.99,No,No,Correct pass
+3,common,What is the largest planet in our solar system?,The largest planet in our solar system is Jupiter.,0.99,No,No,Correct pass
+4,common,In which country is the Taj Mahal located?,The Taj Mahal is located in India.,0.99,No,No,Correct pass
+5,common,How many bones are in the adult human body?,An adult human body has 206 bones.,0.99,No,No,Correct pass
+6,obscure,Who was the first woman to win a Fields Medal?,"Maryam Mirzakhani was the first and, to date, the only woman to have won the Fields Medal.",0.99,No,No,Correct pass
+7,obscure,What is the capital of Burkina Faso?,The capital of Burkina Faso is Ouagadougou.,0.99,No,No,Correct pass
+8,obscure,Who was the second Prime Minister of India?,The second Prime Minister of India was Gulzarilal Nanda.,0.40,Yes,No,False alarm
+9,obscure,Which element has atomic number 74?,Element with atomic number 74 is Radium.,0.10,Yes,Yes,Caught
+10,obscure,In what year was the Treaty of Tordesillas signed?,The Treaty of Tordesillas was signed in 1494.,0.40,Yes,No,False alarm
+11,obscure,Who directed the 1957 Japanese film Throne of Blood?,Akira Kurosawa directed the 1957 Japanese film Throne of Blood.,0.99,No,No,Correct pass
+12,obscure,What is the highest mountain in Bhutan?,Jomolhari is considered the highest mountain in Bhutan.,0.60,No,Yes,Missed
+13,false premise,In which year did Isaac Newton win the Nobel Prize in Physics?,Isaac Newton did not win the Nobel Prize as he lived before its inception in 1901.,0.65,No,No,Correct pass
+14,false premise,In which year did Mahatma Gandhi become Prime Minister of India?,Mahatma Gandhi never became Prime Minister of India as he was not a politician.,0.48,Yes,No,False alarm
+15,made up,What is the capital of the African country of Zandovia?,There is no country named Zandovia; it is not an actual country.,0.92,No,No,Correct pass
+16,made up,Who discovered the chemical element Morvium?,Morvium is not a recognized chemical element.,0.70,No,No,Correct pass
+17,image,What colour is the bus?,red,0.99,No,No,Correct pass
+18,image,How many dogs are there?,two,0.99,No,No,Correct pass
+19,image,What fruit is in the bowl?,oranges,0.99,No,No,Correct pass
+20,image,What is the name of the shop?,danishes,0.01,Yes,Yes,Caught

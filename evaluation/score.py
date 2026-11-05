@@ -81,6 +81,23 @@ def main():
         summary["prompts"][name] = result
     summary["seconds_per_check"] = sum(r["seconds"] for r in main_rows) / len(main_rows)
 
+    # How the three labels the user actually sees lined up with the truth.
+    bands = {"Likely hallucination": [0, 0], "Unsure": [0, 0], "Consistent": [0, 0]}
+    for row in main_rows:
+        if row["agreement"] < threshold:
+            band = "Likely hallucination"
+        elif row["agreement"] < config.STRONG_AGREEMENT:
+            band = "Unsure"
+        else:
+            band = "Consistent"
+        bands[band][1 if row["wrong"] else 0] += 1
+    summary["bands"] = {name: {"right": value[0], "wrong": value[1]} for name, value in bands.items()}
+    print("bands (right, wrong):", bands)
+    print("threshold check:")
+    for value, result in summary["threshold_check"].items():
+        print("  %s caught %d missed %d alarms %d clean %d" % (
+            value, result["caught"], result["missed"], result["false_alarms"], result["clean"]))
+
     (RESULTS / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     (RESULTS / "marked_results.json").write_text(json.dumps(rows, indent=2), encoding="utf-8")
     print(json.dumps(summary["main"], indent=2))

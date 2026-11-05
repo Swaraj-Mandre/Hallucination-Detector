@@ -1,0 +1,98 @@
+[
+  {
+    "question": "What is the capital of Australia?",
+    "answers": [
+      "The capital of Australia is Canberra.",
+      "The capital of Australia is Canberra.",
+      "The capital of Australia is Canberra.",
+      "The capital of Australia is Canberra.",
+      "The capital of Australia is Canberra."
+    ],
+    "best": "The capital of Australia is Canberra.",
+    "auto_wrong": false
+  },
+  {
+    "question": "Who wrote the play Romeo and Juliet?",
+    "answers": [
+      "William Shakespeare wrote the play Romeo and Juliet.",
+      "William Shakespeare wrote the play Romeo and Juliet.",
+      "William Shakespeare wrote the play Romeo and Juliet.",
+      "William Shakespeare wrote the play Romeo and Juliet.",
+      "William Shakespeare wrote the play Romeo and Juliet."
+    ],
+    "best": "William Shakespeare wrote the play Romeo and Juliet.",
+    "auto_wrong": false
+  },
+  {
+    "question": "Who won the Nobel Prize in Physics in 1962?",
+    "answers": [
+      "Ben F. Mottelson and Walter Kohn won the Nobel Prize in Physics in 1962.",
+      "Physicist Jerome Isaac Friedman won the Nobel Prize in Physics in 1962.",
+      "Steven Chu, William D. Paul, and Dudley R. Herschbach won the Nobel Prize in Chemistry in 1962, not Physics. The correct answer for Physics in 1962 is Jerome Friedman.",
+      "Physicist Jerome Friedman won the Nobel Prize in Physics in 1962.",
+      "L\u00e9on Eugene Hedwig won the Nobel Prize in Physics in 1962."
+    ],
+    "best": "Ben F. Mottelson and Walter Kohn won the Nobel Prize in Physics in 1962.",
+    "auto_wrong": true
+  },
+  {
+    "question": "In which year was the Battle of Talikota fought?",
+    "answers": [
+      "The Battle of Talikota was fought in 1565.",
+      "The Battle of Talikota was fought in 1616.",
+      "The Battle of Talikota was fought in 1616.",
+      "The Battle of Talikota was fought in 1565.",
+      "The Battle of Talikota was fought in 1616."
+    ],
+    "best": "The Battle of Talikota was fought in 1616.",
+    "auto_wrong": true
+  },
+  {
+    "question": "What is the name of the longest river in Bhutan?",
+    "answers": [
+      "The Phochu (also spelled as Po Chu or Phochu) is often referred to as the main river in Bhutan, but it's not technically a national river; the country does not have a single longest river like some larger nations.",
+      "The Trashigang Pho, while not a river, is the longest river in Bhutan.",
+      "The name of the longest river in Bhutan is the Mo River.",
+      "The name of the longest river in Bhutan is the Mo River.",
+      "There is no river in Bhutan that qualifies as its \"longest\" as the country does not have any major rivers longer than a few kilometers."
+    ],
+    "best": "The name of the longest river in Bhutan is the Mo River.",
+    "auto_wrong": true
+  },
+  {
+    "question": "In which year did Albert Einstein win the Nobel Prize in Chemistry?",
+    "answers": [
+      "Albert Einstein never won the Nobel Prize in Chemistry.",
+      "Albert Einstein did not win the Nobel Prize in Chemistry; he won it in Physics in 1921.",
+      "Albert Einstein never won the Nobel Prize in Chemistry; he won it in Physics in 1921.",
+      "Albert Einstein never won the Nobel Prize in Chemistry.",
+      "Albert Einstein never won the Nobel Prize in Chemistry; he won it for Physics in 1921."
+    ],
+    "best": "Albert Einstein did not win the Nobel Prize in Chemistry; he won it in Physics in 1921.",
+    "auto_wrong": false
+  },
+  {
+    "question": "Who was the first Indian astronaut to walk on the Moon?",
+    "answers": [
+      "There has never been an Indian astronaut who walked on the Moon, as no missions have carried Indian astronauts to space so far.",
+      "There has never been an Indian astronaut, let alone one who walked on the Moon.",
+      "There has never been an Indian astronaut who has walked on the Moon, as no human has set foot on the Moon.",
+      "There has never been an Indian astronaut who has walked on the Moon, as lunar missions are exclusively associated with NASA until now.",
+      "There has been no Indian astronaut, nor has anyone from India walked on the Moon."
+    ],
+    "best": "There has been no Indian astronaut, nor has anyone from India walked on the Moon.",
+    "auto_wrong": false
+  },
+  {
+    "question": "Who wrote the 1987 novel The Glass Tortoise of Nagpur?",
+    "answers": [
+      "The novel The Glass Tortoise of Nagpur was written by Chitra Banerjee Divakaruni.",
+      "The novel The Glass Tortoise of Nagpur was written by Michael Ondaatje.",
+      "The 1987 novel \"The Glass Tortoise of Nagpur\" was written by Rohinton Mistry.",
+      "The novel \"The Glass Tortoise of Nagpur\" was written by Anita Desai.",
+      "The novel The Glass Tortoise of Nagpur was written by Amrita Pritam."
+    ],
+    "best": "The novel The Glass Tortoise of Nagpur was written by Chitra Banerjee Divakaruni.",
+    "auto_wrong": true
+  }
+]

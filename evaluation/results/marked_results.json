@@ -1,0 +1,1376 @@
+[
+  {
+    "kind": "common",
+    "question": "What is the chemical symbol for gold?",
+    "prompt": "Direct",
+    "answers": [
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au."
+    ],
+    "best": "The chemical symbol for gold is Au.",
+    "agreement": 0.9917,
+    "confidence": [
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 2.68,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "Who wrote the novel Pride and Prejudice?",
+    "prompt": "Direct",
+    "answers": [
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Pride and Prejudice was written by Jane Austen.",
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Pride and Prejudice was written by Jane Austen.",
+      "Pride and Prejudice was written by Jane Austen."
+    ],
+    "best": "Jane Austen wrote the novel Pride and Prejudice.",
+    "agreement": 0.9908,
+    "confidence": [
+      0.9912,
+      0.9905,
+      0.9912,
+      0.9905,
+      0.9905
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.17,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "What is the largest planet in our solar system?",
+    "prompt": "Direct",
+    "answers": [
+      "The largest planet in our solar system is Jupiter.",
+      "The largest planet in our solar system is Jupiter.",
+      "The largest planet in our solar system is Jupiter.",
+      "The largest planet in our solar system is Jupiter.",
+      "The largest planet in our solar system is Jupiter."
+    ],
+    "best": "The largest planet in our solar system is Jupiter.",
+    "agreement": 0.9937,
+    "confidence": [
+      0.9937,
+      0.9937,
+      0.9937,
+      0.9937,
+      0.9937
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.83,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "In which country is the Taj Mahal located?",
+    "prompt": "Direct",
+    "answers": [
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India."
+    ],
+    "best": "The Taj Mahal is located in India.",
+    "agreement": 0.9932,
+    "confidence": [
+      0.9932,
+      0.9932,
+      0.9932,
+      0.9932,
+      0.9932
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.74,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "How many bones are in the adult human body?",
+    "prompt": "Direct",
+    "answers": [
+      "There are 206 bones in the adult human body.",
+      "An adult human body has 206 bones.",
+      "There are 206 bones in the adult human body.",
+      "An adult human body typically has 206 bones.",
+      "The average adult human body has 206 bones."
+    ],
+    "best": "An adult human body has 206 bones.",
+    "agreement": 0.9925,
+    "confidence": [
+      0.9926,
+      0.9928,
+      0.9926,
+      0.9922,
+      0.9926
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.02,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Who was the first woman to win a Fields Medal?",
+    "prompt": "Direct",
+    "answers": [
+      "Maryam Mirzakhani was the first and, to date, the only woman to have won the Fields Medal.",
+      "The first woman to win a Fields Medal was Maryam Mirzakhani.",
+      "Maryam Mirzakhani was the first and, to date, the only woman to have won the Fields Medal.",
+      "Maryam Mirzakhani was the first and, to date, the only woman to have won the Fields Medal.",
+      "Maryam Mirzakhani was the first and, to date, the only woman to have won the Fields Medal."
+    ],
+    "best": "Maryam Mirzakhani was the first and, to date, the only woman to have won the Fields Medal.",
+    "agreement": 0.9942,
+    "confidence": [
+      0.9944,
+      0.9937,
+      0.9944,
+      0.9944,
+      0.9944
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.76,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "What is the capital of Burkina Faso?",
+    "prompt": "Direct",
+    "answers": [
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou."
+    ],
+    "best": "The capital of Burkina Faso is Ouagadougou.",
+    "agreement": 0.9917,
+    "confidence": [
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.09,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Who was the second Prime Minister of India?",
+    "prompt": "Direct",
+    "answers": [
+      "The second Prime Minister of India was Lal Bahadur Shastri.",
+      "The second Prime Minister of India was Gulzarilal Nanda.",
+      "The second Prime Minister of India was Gulzarilal Nanda.",
+      "The second Prime Minister of India was Lal Bahadur Shastri.",
+      "The second Prime Minister of India was Gulzarilal Nanda."
+    ],
+    "best": "The second Prime Minister of India was Gulzarilal Nanda.",
+    "agreement": 0.3965,
+    "confidence": [
+      0.2483,
+      0.4953,
+      0.4953,
+      0.2483,
+      0.4953
+    ],
+    "group_sizes": [
+      3,
+      2
+    ],
+    "seconds": 1.17,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Which element has atomic number 74?",
+    "prompt": "Direct",
+    "answers": [
+      "Element 74 is Tc (technetium).",
+      "Element with atomic number 74 is Radium.",
+      "Element with atomic number 74 is Hg (Mercury).",
+      "Element with atomic number 74 is Radium.",
+      "Element with atomic number 74 is Rhenium."
+    ],
+    "best": "Element with atomic number 74 is Radium.",
+    "agreement": 0.1036,
+    "confidence": [
+      0.0053,
+      0.2518,
+      0.0041,
+      0.2518,
+      0.0048
+    ],
+    "group_sizes": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "seconds": 1.07,
+    "wrong": true
+  },
+  {
+    "kind": "obscure",
+    "question": "In what year was the Treaty of Tordesillas signed?",
+    "prompt": "Direct",
+    "answers": [
+      "The Treaty of Tordesillas was signed in 1494.",
+      "The Treaty of Tordesillas was signed in 1500.",
+      "The Treaty of Tordesillas was signed in 1500.",
+      "The Treaty of Tordesillas was signed in 1494.",
+      "The Treaty of Tordesillas was signed in 1494."
+    ],
+    "best": "The Treaty of Tordesillas was signed in 1494.",
+    "agreement": 0.3986,
+    "confidence": [
+      0.4973,
+      0.2505,
+      0.2505,
+      0.4973,
+      0.4973
+    ],
+    "group_sizes": [
+      3,
+      2
+    ],
+    "seconds": 1.12,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Who directed the 1957 Japanese film Throne of Blood?",
+    "prompt": "Direct",
+    "answers": [
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood."
+    ],
+    "best": "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+    "agreement": 0.9907,
+    "confidence": [
+      0.9907,
+      0.9907,
+      0.9907,
+      0.9907,
+      0.9907
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.34,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "What is the highest mountain in Bhutan?",
+    "prompt": "Direct",
+    "answers": [
+      "Jungshhee (Jhomolhari) is the highest mountain in Bhutan.",
+      "Jogchen Mountain is the highest mountain in Bhutan, with an elevation of 7,550 meters (24,773 feet).",
+      "Jomolhari is considered the highest mountain in Bhutan.",
+      "The highest mountain in Bhutan is Jhomolhari at an elevation of 7,096 meters above sea level.",
+      "Jungchen Chorten (Mount Jhomolhari) is the highest mountain in Bhutan."
+    ],
+    "best": "Jomolhari is considered the highest mountain in Bhutan.",
+    "agreement": 0.5996,
+    "confidence": [
+      0.7115,
+      0.2088,
+      0.7609,
+      0.5736,
+      0.7433
+    ],
+    "group_sizes": [
+      4,
+      1
+    ],
+    "seconds": 2.3,
+    "wrong": true
+  },
+  {
+    "kind": "false premise",
+    "question": "In which year did Isaac Newton win the Nobel Prize in Physics?",
+    "prompt": "Direct",
+    "answers": [
+      "Isaac Newton did not win the Nobel Prize as it was established after his lifetime.",
+      "Isaac Newton did not win the Nobel Prize as he lived before its inception in 1901.",
+      "Isaac Newton did not win the Nobel Prize as it was established after his lifetime.",
+      "Isaac Newton did not win the Nobel Prize as it was established after his lifetime.",
+      "Isaac Newton did not win the Nobel Prize as it was established after his death."
+    ],
+    "best": "Isaac Newton did not win the Nobel Prize as he lived before its inception in 1901.",
+    "agreement": 0.6527,
+    "confidence": [
+      0.7446,
+      0.7844,
+      0.7446,
+      0.7446,
+      0.2454
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.63,
+    "wrong": false
+  },
+  {
+    "kind": "false premise",
+    "question": "In which year did Mahatma Gandhi become Prime Minister of India?",
+    "prompt": "Direct",
+    "answers": [
+      "Mahatma Gandhi never became Prime Minister of India as he was not a politician.",
+      "Mahatma Gandhi never became Prime Minister of India as he was not a politician, but a political activist and leader.",
+      "Mahatma Gandhi never became Prime Minister of India as he lived long before India gained independence and had different political career.",
+      "Mahatma Gandhi never became Prime Minister of India as he was not a political leader but a spiritual and political activist.",
+      "Mahatma Gandhi never became Prime Minister of India as he was assassinated in 1948 and did not hold any political office."
+    ],
+    "best": "Mahatma Gandhi never became Prime Minister of India as he was not a politician.",
+    "agreement": 0.4835,
+    "confidence": [
+      0.8499,
+      0.4858,
+      0.262,
+      0.4813,
+      0.3388
+    ],
+    "group_sizes": [
+      4,
+      1
+    ],
+    "seconds": 2.12,
+    "wrong": false
+  },
+  {
+    "kind": "made up",
+    "question": "What is the capital of the African country of Zandovia?",
+    "prompt": "Direct",
+    "answers": [
+      "There is no country named Zandovia; it is not a real country.",
+      "There is no country named Zandovia; it is not an actual country.",
+      "There is no country called Zandovia, this name does not correspond to any real-world location.",
+      "There is no country named Zandovia; it is not a recognized nation.",
+      "There is no country called Zandovia; it is a fictional name."
+    ],
+    "best": "There is no country named Zandovia; it is not an actual country.",
+    "agreement": 0.915,
+    "confidence": [
+      0.9812,
+      0.9846,
+      0.8359,
+      0.8202,
+      0.9532
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.56,
+    "wrong": false
+  },
+  {
+    "kind": "made up",
+    "question": "Who discovered the chemical element Morvium?",
+    "prompt": "Direct",
+    "answers": [
+      "Morvium is not a recognized chemical element.",
+      "Morvium is not a recognized chemical element and the question might be a typo for\u9494 (Meitnerium) which was discovered by a team led by Georg von Hevesy and Dirk Coster.",
+      "Morvium is not a recognized chemical element.",
+      "Morvium is not a recognized chemical element by the IUPAC.",
+      "There is no such element as Morvium and its discovery has not been documented."
+    ],
+    "best": "Morvium is not a recognized chemical element.",
+    "agreement": 0.7018,
+    "confidence": [
+      0.9629,
+      0.559,
+      0.9629,
+      0.5117,
+      0.5125
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 3.0,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "What is the chemical symbol for gold?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au."
+    ],
+    "best": "The chemical symbol for gold is Au.",
+    "agreement": 0.9917,
+    "confidence": [
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.74,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "Who wrote the novel Pride and Prejudice?",
+    "prompt": "Few-shot",
+    "answers": [
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Jane Austen wrote the novel Pride and Prejudice."
+    ],
+    "best": "Jane Austen wrote the novel Pride and Prejudice.",
+    "agreement": 0.9927,
+    "confidence": [
+      0.9927,
+      0.9927,
+      0.9927,
+      0.9927,
+      0.9927
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.08,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "What is the largest planet in our solar system?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The largest planet in our solar system is Jupiter.",
+      "The largest planet in our solar system is Jupiter.",
+      "The largest planet in our solar system is Jupiter.",
+      "The largest planet in our solar system is Jupiter.",
+      "The largest planet in our solar system is Jupiter."
+    ],
+    "best": "The largest planet in our solar system is Jupiter.",
+    "agreement": 0.9937,
+    "confidence": [
+      0.9937,
+      0.9937,
+      0.9937,
+      0.9937,
+      0.9937
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.88,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "In which country is the Taj Mahal located?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India."
+    ],
+    "best": "The Taj Mahal is located in India.",
+    "agreement": 0.9932,
+    "confidence": [
+      0.9932,
+      0.9932,
+      0.9932,
+      0.9932,
+      0.9932
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.83,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "How many bones are in the adult human body?",
+    "prompt": "Few-shot",
+    "answers": [
+      "An adult human body typically has 206 bones.",
+      "An adult human body typically has 206 bones.",
+      "An adult human body typically has 206 bones.",
+      "An adult human body typically has 206 bones.",
+      "An adult human body typically has 206 bones."
+    ],
+    "best": "An adult human body typically has 206 bones.",
+    "agreement": 0.9937,
+    "confidence": [
+      0.9937,
+      0.9937,
+      0.9937,
+      0.9937,
+      0.9937
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.05,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Who was the first woman to win a Fields Medal?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The first woman to win a Fields Medal is Maryam Mirzakhani.",
+      "The first woman to win a Fields Medal is Maryam Mirzakhani.",
+      "The first woman to win a Fields Medal is Maryam Mirzakhani.",
+      "The first woman to win a Fields Medal is Maryam Mirzakhani.",
+      "The first woman to win a Fields Medal is Maryam Mirzakhani."
+    ],
+    "best": "The first woman to win a Fields Medal is Maryam Mirzakhani.",
+    "agreement": 0.9941,
+    "confidence": [
+      0.9941,
+      0.9941,
+      0.9941,
+      0.9941,
+      0.9941
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.31,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "What is the capital of Burkina Faso?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou."
+    ],
+    "best": "The capital of Burkina Faso is Ouagadougou.",
+    "agreement": 0.9917,
+    "confidence": [
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.15,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Who was the second Prime Minister of India?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The second Prime Minister of India was Gulzarilal Nanda.",
+      "The second Prime Minister of India was Lal Bahadur Shastri.",
+      "The second Prime Minister of India was Gulzarilal Nanda.",
+      "The second Prime Minister of India was Lal Bahadur Shastri.",
+      "The second Prime Minister of India was Gulzarilal Nanda."
+    ],
+    "best": "The second Prime Minister of India was Gulzarilal Nanda.",
+    "agreement": 0.3965,
+    "confidence": [
+      0.4953,
+      0.2483,
+      0.4953,
+      0.2483,
+      0.4953
+    ],
+    "group_sizes": [
+      3,
+      2
+    ],
+    "seconds": 1.23,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Which element has atomic number 74?",
+    "prompt": "Few-shot",
+    "answers": [
+      "Element 74 is Tc, which stands for Technetium.",
+      "Element 74 is Tc (technetium).",
+      "Element 74 is Tc (Technetium).",
+      "Element 74 is Tc (technetium).",
+      "Element 74 is Tc (Technetium)."
+    ],
+    "best": "Element 74 is Tc (technetium).",
+    "agreement": 0.9817,
+    "confidence": [
+      0.9773,
+      0.9833,
+      0.9823,
+      0.9833,
+      0.9823
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.24,
+    "wrong": true
+  },
+  {
+    "kind": "obscure",
+    "question": "In what year was the Treaty of Tordesillas signed?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The Treaty of Tordesillas was signed in 1494.",
+      "The Treaty of Tordesillas was signed in 1494.",
+      "The Treaty of Tordesillas was signed in 1494.",
+      "The Treaty of Tordesillas was signed in 1494.",
+      "The Treaty of Tordesillas was signed in 1494."
+    ],
+    "best": "The Treaty of Tordesillas was signed in 1494.",
+    "agreement": 0.9902,
+    "confidence": [
+      0.9902,
+      0.9902,
+      0.9902,
+      0.9902,
+      0.9902
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.23,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Who directed the 1957 Japanese film Throne of Blood?",
+    "prompt": "Few-shot",
+    "answers": [
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+      "Akira Kurosawa directed the 1957 film Throne of Blood, based on Shakespeare's Macbeth.",
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+      "Akira Kurosawa directed the 1957 Japanese film Throne of Blood."
+    ],
+    "best": "Akira Kurosawa directed the 1957 Japanese film Throne of Blood.",
+    "agreement": 0.7035,
+    "confidence": [
+      0.8112,
+      0.8112,
+      0.2727,
+      0.8112,
+      0.8112
+    ],
+    "group_sizes": [
+      4,
+      1
+    ],
+    "seconds": 1.86,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "What is the highest mountain in Bhutan?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The highest mountain in Bhutan is Jomolhari.",
+      "The highest mountain in Bhutan is Jhomolhari, though its exact height is disputed and not officially recognized.",
+      "The highest mountain in Bhutan is Jomolhari.",
+      "The highest mountain in Bhutan is Jhomolhari, which is unofficially considered the 18th highest peak in the world.",
+      "The highest mountain in Bhutan is Jhomolhari, which is unofficially considered to be 7,061 meters (23,166 ft) high."
+    ],
+    "best": "The highest mountain in Bhutan is Jomolhari.",
+    "agreement": 0.8616,
+    "confidence": [
+      0.9922,
+      0.9059,
+      0.9922,
+      0.6723,
+      0.7452
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 2.72,
+    "wrong": true
+  },
+  {
+    "kind": "false premise",
+    "question": "In which year did Isaac Newton win the Nobel Prize in Physics?",
+    "prompt": "Few-shot",
+    "answers": [
+      "Isaac Newton did not win the Nobel Prize as he lived before its establishment in 1901.",
+      "Isaac Newton did not win the Nobel Prize as he lived before its inception in 1901.",
+      "Isaac Newton did not win the Nobel Prize as he lived before its inception in 1901.",
+      "Isaac Newton did not win the Nobel Prize as it was established after his lifetime.",
+      "Isaac Newton did not win the Nobel Prize as he lived before its establishment in 1901."
+    ],
+    "best": "Isaac Newton did not win the Nobel Prize as he lived before its establishment in 1901.",
+    "agreement": 0.9458,
+    "confidence": [
+      0.9685,
+      0.9597,
+      0.9597,
+      0.8726,
+      0.9685
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.68,
+    "wrong": false
+  },
+  {
+    "kind": "false premise",
+    "question": "In which year did Mahatma Gandhi become Prime Minister of India?",
+    "prompt": "Few-shot",
+    "answers": [
+      "Mahatma Gandhi never became Prime Minister of India as he was a political and spiritual leader, not a holder of government office.",
+      "Mahatma Gandhi never became Prime Minister of India as he was not part of any government and died before Indian independence.",
+      "Mahatma Gandhi never became the Prime Minister of India as he was not a political leader; he was an Indian independence activist and statesman.",
+      "Mahatma Gandhi never became Prime Minister of India as he was not a political figure and lived before India had a Prime Minister.",
+      "Mahatma Gandhi never became Prime Minister of India as he was not a political figure but a leader in the Indian independence movement."
+    ],
+    "best": "Mahatma Gandhi never became the Prime Minister of India as he was not a political leader; he was an Indian independence activist and statesman.",
+    "agreement": 0.2904,
+    "confidence": [
+      0.1847,
+      0.257,
+      0.4424,
+      0.2795,
+      0.2884
+    ],
+    "group_sizes": [
+      3,
+      2
+    ],
+    "seconds": 2.2,
+    "wrong": false
+  },
+  {
+    "kind": "made up",
+    "question": "What is the capital of the African country of Zandovia?",
+    "prompt": "Few-shot",
+    "answers": [
+      "The capital of the fictional African country Zandovia is unknown.",
+      "The capital of the fictional African country of Zandovia is unknown.",
+      "I do not have information on a country named Zandovia as it is not a recognized country.",
+      "The capital of the fictional African country of Zandovia is not specified, as it is a made-up place.",
+      "The capital of the fictional African country of Zandovia is not based on real-world information and thus lacks an official capital designation."
+    ],
+    "best": "The capital of the fictional African country of Zandovia is not specified, as it is a made-up place.",
+    "agreement": 0.6927,
+    "confidence": [
+      0.7593,
+      0.7468,
+      0.3533,
+      0.9216,
+      0.6824
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 2.03,
+    "wrong": false
+  },
+  {
+    "kind": "made up",
+    "question": "Who discovered the chemical element Morvium?",
+    "prompt": "Few-shot",
+    "answers": [
+      "Morvium is not a recognized chemical element; it might be a typographical error or a fictional element.",
+      "Morvium is not a recognized chemical element; it likely refers to a typographical error or fictional element.",
+      "Morvium is not a recognized chemical element; it might be a typo or fictional element.",
+      "Morvium is not a recognized chemical element; it might be a typo or fictional element.",
+      "Morvium is not a recognized chemical element; it might be a typographical error or fictional concept."
+    ],
+    "best": "Morvium is not a recognized chemical element; it might be a typo or fictional element.",
+    "agreement": 0.9841,
+    "confidence": [
+      0.9869,
+      0.9866,
+      0.9874,
+      0.9874,
+      0.9723
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.72,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "What is the chemical symbol for gold?",
+    "prompt": "Cautious",
+    "answers": [
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au.",
+      "The chemical symbol for gold is Au.",
+      "Au",
+      "The chemical symbol for gold is Au."
+    ],
+    "best": "The chemical symbol for gold is Au.",
+    "agreement": 0.9603,
+    "confidence": [
+      0.972,
+      0.972,
+      0.972,
+      0.9131,
+      0.972
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.7,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "Who wrote the novel Pride and Prejudice?",
+    "prompt": "Cautious",
+    "answers": [
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Jane Austen wrote the novel Pride and Prejudice.",
+      "Jane Austen wrote the novel Pride and Prejudice."
+    ],
+    "best": "Jane Austen wrote the novel Pride and Prejudice.",
+    "agreement": 0.9927,
+    "confidence": [
+      0.9927,
+      0.9927,
+      0.9927,
+      0.9927,
+      0.9927
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.95,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "What is the largest planet in our solar system?",
+    "prompt": "Cautious",
+    "answers": [
+      "Jupiter is the largest planet in our solar system.",
+      "Jupiter is the largest planet in our solar system.",
+      "Jupiter is the largest planet in our solar system.",
+      "Jupiter is the largest planet in our solar system.",
+      "Jupiter is the largest planet in our solar system."
+    ],
+    "best": "Jupiter is the largest planet in our solar system.",
+    "agreement": 0.9946,
+    "confidence": [
+      0.9946,
+      0.9946,
+      0.9946,
+      0.9946,
+      0.9946
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.87,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "In which country is the Taj Mahal located?",
+    "prompt": "Cautious",
+    "answers": [
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India.",
+      "The Taj Mahal is located in India."
+    ],
+    "best": "The Taj Mahal is located in India.",
+    "agreement": 0.9932,
+    "confidence": [
+      0.9932,
+      0.9932,
+      0.9932,
+      0.9932,
+      0.9932
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 0.77,
+    "wrong": false
+  },
+  {
+    "kind": "common",
+    "question": "How many bones are in the adult human body?",
+    "prompt": "Cautious",
+    "answers": [
+      "There are approximately 206 bones in the adult human body.",
+      "An adult human typically has 206 bones.",
+      "On average, an adult human body has 206 bones.",
+      "There are approximately 206 bones in the adult human body.",
+      "The average adult human body has 206 bones."
+    ],
+    "best": "On average, an adult human body has 206 bones.",
+    "agreement": 0.9885,
+    "confidence": [
+      0.9874,
+      0.9867,
+      0.9912,
+      0.9874,
+      0.9896
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.1,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Who was the first woman to win a Fields Medal?",
+    "prompt": "Cautious",
+    "answers": [
+      "Maryam Mirzakhani was the first and, to date, only woman to win the Fields Medal.",
+      "Maryam Mirzakhani was the first and, to date, the only woman to have won the Fields Medal.",
+      "Ivan F. Wilde did not exist and there has never been a female Fields Medalist.",
+      "Maryam Mirzakhani was the first and, to date, the only woman to have won the Fields Medal.",
+      "Mirzakhani was the first woman to win a Fields Medal."
+    ],
+    "best": "Maryam Mirzakhani was the first and, to date, only woman to win the Fields Medal.",
+    "agreement": 0.5959,
+    "confidence": [
+      0.7455,
+      0.7449,
+      0.0013,
+      0.7449,
+      0.743
+    ],
+    "group_sizes": [
+      4,
+      1
+    ],
+    "seconds": 1.79,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "What is the capital of Burkina Faso?",
+    "prompt": "Cautious",
+    "answers": [
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou.",
+      "The capital of Burkina Faso is Ouagadougou."
+    ],
+    "best": "The capital of Burkina Faso is Ouagadougou.",
+    "agreement": 0.9917,
+    "confidence": [
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917,
+      0.9917
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.11,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Who was the second Prime Minister of India?",
+    "prompt": "Cautious",
+    "answers": [
+      "The second Prime Minister of India was Gulzarilal Nanda.",
+      "The second Prime Minister of India was Gulzarilal Nanda.",
+      "The second Prime Minister of India was Gulzarilal Nanda.",
+      "The second Prime Minister of India was Gulzarilal Nanda.",
+      "The second Prime Minister of India was Gulzarilal Nanda."
+    ],
+    "best": "The second Prime Minister of India was Gulzarilal Nanda.",
+    "agreement": 0.9902,
+    "confidence": [
+      0.9902,
+      0.9902,
+      0.9902,
+      0.9902,
+      0.9902
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 1.1,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "Which element has atomic number 74?",
+    "prompt": "Cautious",
+    "answers": [
+      "Plutonium has atomic number 74.",
+      "Mercury (Hg) has atomic number 74.",
+      "Mercury (Hg) has atomic number 74.",
+      "Tc (Technetium) has an atomic number of 43, not 74. There is no element with atomic number 74.",
+      "Lead (Pb) has atomic number 74."
+    ],
+    "best": "Mercury (Hg) has atomic number 74.",
+    "agreement": 0.1098,
+    "confidence": [
+      0.0146,
+      0.2575,
+      0.2575,
+      0.0076,
+      0.0119
+    ],
+    "group_sizes": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "seconds": 2.3,
+    "wrong": true
+  },
+  {
+    "kind": "obscure",
+    "question": "In what year was the Treaty of Tordesillas signed?",
+    "prompt": "Cautious",
+    "answers": [
+      "The Treaty of Tordesillas was signed in 1500.",
+      "The Treaty of Tordesillas was signed in 1500.",
+      "The Treaty of Tordesillas was signed in 1494.",
+      "The Treaty of Tordesillas was signed in 1500.",
+      "The Treaty of Tordesillas was signed in 1494."
+    ],
+    "best": "The Treaty of Tordesillas was signed in 1500.",
+    "agreement": 0.3983,
+    "confidence": [
+      0.4966,
+      0.4966,
+      0.2509,
+      0.4966,
+      0.2509
+    ],
+    "group_sizes": [
+      3,
+      2
+    ],
+    "seconds": 1.17,
+    "wrong": true
+  },
+  {
+    "kind": "obscure",
+    "question": "Who directed the 1957 Japanese film Throne of Blood?",
+    "prompt": "Cautious",
+    "answers": [
+      "The director of the 1957 Japanese film Throne of Blood was Akira Kurosawa.",
+      "Kenji Mizoguchi directed the 1957 Japanese film Throne of Blood.",
+      "Kenji Mizoguchi directed it, but it was actually directed by Akira Kurosawa.",
+      "Kenshuu Kaneko directed the 1957 Japanese film Throne of Blood, but it was actually directed by Akira Kurosawa.",
+      "The director was Akira Kurosawa."
+    ],
+    "best": "The director was Akira Kurosawa.",
+    "agreement": 0.3533,
+    "confidence": [
+      0.476,
+      0.0032,
+      0.2204,
+      0.4277,
+      0.639
+    ],
+    "group_sizes": [
+      4,
+      1
+    ],
+    "seconds": 2.23,
+    "wrong": false
+  },
+  {
+    "kind": "obscure",
+    "question": "What is the highest mountain in Bhutan?",
+    "prompt": "Cautious",
+    "answers": [
+      "Jhomolhari is considered the highest mountain in Bhutan, with an elevation of 7,096 meters (23,281 ft).",
+      "Jungshi (also known as Gangdaikidang) is claimed to be the highest mountain in Bhutan, with an elevation of 7,540 m (24,741 ft).",
+      "Jungshi (Nyenchhen Kang) is considered the highest mountain in Bhutan, with an elevation of 7,570 m (24,836 ft).",
+      "Jungchen Chorten (incorrectly named; the highest is Gangkhar Puensum)",
+      "Jhomolhari is often cited as the highest peak in Bhutan, but its elevation is disputed; Gangkhar Puensum is officially recognized as the highest with an elevation of 7,570 m (24,836 ft)."
+    ],
+    "best": "Jungshi (Nyenchhen Kang) is considered the highest mountain in Bhutan, with an elevation of 7,570 m (24,836 ft).",
+    "agreement": 0.3236,
+    "confidence": [
+      0.2359,
+      0.3172,
+      0.4643,
+      0.1977,
+      0.403
+    ],
+    "group_sizes": [
+      4,
+      1
+    ],
+    "seconds": 3.8,
+    "wrong": true
+  },
+  {
+    "kind": "false premise",
+    "question": "In which year did Isaac Newton win the Nobel Prize in Physics?",
+    "prompt": "Cautious",
+    "answers": [
+      "Isaac Newton did not win the Nobel Prize as it was established after his death.",
+      "Isaac Newton did not win the Nobel Prize as it was established after his death.",
+      "The Nobel Prize was not awarded in Isaac Newton's lifetime, and he lived long before the establishment of the prize in 1901.",
+      "Isaac Newton did not win the Nobel Prize as it was established after his death.",
+      "Isaac Newton did not win the Nobel Prize as it was established after his death."
+    ],
+    "best": "Isaac Newton did not win the Nobel Prize as it was established after his death.",
+    "agreement": 0.9559,
+    "confidence": [
+      0.9702,
+      0.9702,
+      0.8984,
+      0.9702,
+      0.9702
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 2.1,
+    "wrong": false
+  },
+  {
+    "kind": "false premise",
+    "question": "In which year did Mahatma Gandhi become Prime Minister of India?",
+    "prompt": "Cautious",
+    "answers": [
+      "Mahatma Gandhi never became Prime Minister of India.",
+      "Mahatma Gandhi never became Prime Minister of India as he was not a politician, but a political activist and leader.",
+      "Mahatma Gandhi never became Prime Minister of India; he was an Indian independence leader but never held government office.",
+      "Mahatma Gandhi never became Prime Minister of India as he was assassinated in 1948 and there has never been a Prime Minister from India named Mahatma Gandhi.",
+      "Mahatma Gandhi never became Prime Minister of India."
+    ],
+    "best": "Mahatma Gandhi never became Prime Minister of India.",
+    "agreement": 0.7811,
+    "confidence": [
+      0.9913,
+      0.6862,
+      0.7088,
+      0.528,
+      0.9913
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 2.65,
+    "wrong": false
+  },
+  {
+    "kind": "made up",
+    "question": "What is the capital of the African country of Zandovia?",
+    "prompt": "Cautious",
+    "answers": [
+      "I am not sure, as there are no reliable sources indicating that Zandovia is a real country.",
+      "I am not sure, as there is no country named Zandovia.",
+      "I am not sure about the capital of Zandovia as it is not a recognized African country.",
+      "I am not sure, as there is no real country called Zandovia.",
+      "I am not sure, as there is no country named Zandovia."
+    ],
+    "best": "I am not sure, as there is no real country called Zandovia.",
+    "agreement": 0.4435,
+    "confidence": [
+      0.2739,
+      0.5504,
+      0.1001,
+      0.7427,
+      0.5504
+    ],
+    "group_sizes": [
+      4,
+      1
+    ],
+    "seconds": 1.65,
+    "wrong": false
+  },
+  {
+    "kind": "made up",
+    "question": "Who discovered the chemical element Morvium?",
+    "prompt": "Cautious",
+    "answers": [
+      "There is no such element as Morvium in the periodic table; this question likely contains an error.",
+      "There is no such element as Morvium; it is not recognized in the periodic table.",
+      "There is no such element as Morvium in the periodic table; this question seems to be based on an incorrect assumption.",
+      "There is no such element as Morvium; it is not recognized by the International Union of Pure and Applied Chemistry (IUPAC).",
+      "There is no such element as Morvium in the periodic table."
+    ],
+    "best": "There is no such element as Morvium in the periodic table.",
+    "agreement": 0.6618,
+    "confidence": [
+      0.7313,
+      0.7396,
+      0.737,
+      0.2044,
+      0.8967
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 2.09,
+    "wrong": false
+  },
+  {
+    "kind": "image",
+    "question": "What colour is the bus?",
+    "prompt": "BLIP",
+    "answers": [
+      "red",
+      "red",
+      "red",
+      "red",
+      "red"
+    ],
+    "best": "red",
+    "agreement": 0.9932,
+    "confidence": [
+      0.9932,
+      0.9932,
+      0.9932,
+      0.9932,
+      0.9932
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 4.33,
+    "wrong": false
+  },
+  {
+    "kind": "image",
+    "question": "How many dogs are there?",
+    "prompt": "BLIP",
+    "answers": [
+      "2",
+      "2",
+      "2",
+      "2",
+      "two"
+    ],
+    "best": "two",
+    "agreement": 0.9936,
+    "confidence": [
+      0.9934,
+      0.9934,
+      0.9934,
+      0.9934,
+      0.9941
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 4.08,
+    "wrong": false
+  },
+  {
+    "kind": "image",
+    "question": "What fruit is in the bowl?",
+    "prompt": "BLIP",
+    "answers": [
+      "oranges",
+      "orange",
+      "oranges",
+      "orange",
+      "oranges"
+    ],
+    "best": "oranges",
+    "agreement": 0.9913,
+    "confidence": [
+      0.9917,
+      0.9907,
+      0.9917,
+      0.9907,
+      0.9917
+    ],
+    "group_sizes": [
+      5
+    ],
+    "seconds": 4.36,
+    "wrong": false
+  },
+  {
+    "kind": "image",
+    "question": "What is the name of the shop?",
+    "prompt": "BLIP",
+    "answers": [
+      "danishes",
+      "olives",
+      "gourmet burger kitchen",
+      "gowns",
+      "corky ' s"
+    ],
+    "best": "danishes",
+    "agreement": 0.008,
+    "confidence": [
+      0.0073,
+      0.0033,
+      0.0051,
+      0.0105,
+      0.0139
+    ],
+    "group_sizes": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "seconds": 4.86,
+    "wrong": true
+  }
+]

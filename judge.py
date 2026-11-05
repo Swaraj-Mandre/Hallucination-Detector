@@ -2,9 +2,14 @@
 Decides how much the sampled answers agree, using RoBERTa-MNLI (U3).
 
 RoBERTa-MNLI reads two sentences and gives three probabilities: the first
-sentence entails the second, contradicts it, or neither. Two answers mean the
-same thing only if each one entails the other, so every pair is checked in both
-directions and the weaker direction is kept as the pair score.
+sentence entails the second, contradicts it, or neither. Every pair of answers is
+checked in both directions and the stronger direction is kept as the pair score.
+
+Why the stronger one: a longer answer entails a shorter one but not the other way
+round. "He did not win, as the prize came later" implies "He did not win", so the
+two support the same claim even though only one direction holds. Requiring both
+directions treated such pairs as disagreement and caused false alarms. See
+evaluation/compare_scoring.py for the measurement.
 """
 
 import torch
@@ -43,9 +48,9 @@ def entailment_matrix(sentences):
 
 
 def pair_scores(matrix):
-    """Keep the weaker direction of each pair, so one-way entailment scores low."""
+    """Keep the stronger direction of each pair."""
     count = len(matrix)
-    return [[min(matrix[i][j], matrix[j][i]) for j in range(count)] for i in range(count)]
+    return [[max(matrix[i][j], matrix[j][i]) for j in range(count)] for i in range(count)]
 
 
 def group_answers(scores):
