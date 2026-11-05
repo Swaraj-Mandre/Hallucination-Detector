@@ -6,7 +6,9 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import config
 
 tokenizer = AutoTokenizer.from_pretrained(config.LLM_MODEL)
-model = AutoModelForCausalLM.from_pretrained(config.LLM_MODEL, dtype=torch.bfloat16).to("cuda")
+models = {"cuda": AutoModelForCausalLM.from_pretrained(config.LLM_MODEL, dtype=torch.bfloat16).to("cuda")}
+if config.CPU_FALLBACK:
+    models["cpu"] = AutoModelForCausalLM.from_pretrained(config.LLM_MODEL, dtype=torch.bfloat16)
 
 
 def build_messages(question, prompt_name):
@@ -19,9 +21,10 @@ def build_messages(question, prompt_name):
     return messages
 
 
-def sample_answers(question, prompt_name=config.DEFAULT_PROMPT,
-                   temperature=config.TEMPERATURE, num_samples=config.NUM_SAMPLES):
+def sample_answers(question, prompt_name=config.DEFAULT_PROMPT, temperature=config.TEMPERATURE,
+                   num_samples=config.NUM_SAMPLES, device="cuda"):
     """Return num_samples independent answers to one question."""
+    model = models[device]
     text = tokenizer.apply_chat_template(
         build_messages(question, prompt_name), tokenize=False, add_generation_prompt=True
     )

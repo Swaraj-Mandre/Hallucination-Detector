@@ -24,22 +24,34 @@ model = AutoModelForSequenceClassification.from_pretrained(
     attn_implementation="eager",   # needed so the attention weights can be read
 ).to("cuda").eval()
 
+# A float32 copy for when the GPU is refused. CPUs are slow at float16.
+cpu_model = None
+if config.CPU_FALLBACK:
+    cpu_model = AutoModelForSequenceClassification.from_pretrained(
+        config.NLI_MODEL, attn_implementation="eager"
+    ).eval()
+
 ENTAILMENT = model.config.label2id.get("ENTAILMENT", 2)
 CONTRADICTION = model.config.label2id.get("CONTRADICTION", 0)
 
 
-def entailment_matrix(sentences):
+def pick(device):
+    return cpu_model if device == "cpu" else model
+
+
+def entailment_matrix(sentences, device="cuda"):
     """Return an n x n list where cell [i][j] is P(sentence i entails sentence j)."""
+    judge_model = pick(device)
     count = len(sentences)
     pairs = [(i, j) for i in range(count) for j in range(count) if i != j]
     inputs = tokenizer(
         [sentences[i] for i, _ in pairs],
         [sentences[j] for _, j in pairs],
         return_tensors="pt", padding=True, truncation=True, max_length=128,
-    ).to(model.device)
+    ).to(judge_model.device)
 
     with torch.no_grad():
-        probabilities = model(**inputs).logits.softmax(dim=-1)
+        probabilities = judge_model(**inputs).logits.float().softmax(dim=-1)
 
     matrix = [[1.0] * count for _ in range(count)]
     for (i, j), row in zip(pairs, probabilities):
@@ -69,7 +81,7 @@ def group_answers(scores):
     return sorted(groups.values(), key=len, reverse=True)
 
 
-def judge(sentences):
+def judge(sentences, device="cuda"):
     """
     Score a set of answers.
 
@@ -80,7 +92,7 @@ def judge(sentences):
         groups       answer indexes grouped by the claim they make
         best         index of the answer the others support most
     """
-    matrix = entailment_matrix(sentences)
+    matrix = entailment_matrix(sentences, device)
     scores = pair_scores(matrix)
     others = len(sentences) - 1
     confidence = [
@@ -98,7 +110,7 @@ def judge(sentences):
     }
 
 
-def attention_map(first, second):
+def attention_map(first, second, device="cuda"):
     """
     Show which words the judge looked at when comparing two sentences.
 
@@ -106,9 +118,10 @@ def attention_map(first, second):
     token, because that is the position the classifier makes its decision from.
     Returns the words and one weight for each.
     """
-    inputs = tokenizer(first, second, return_tensors="pt", truncation=True, max_length=64).to(model.device)
+    judge_model = pick(device)
+    inputs = tokenizer(first, second, return_tensors="pt", truncation=True, max_length=64).to(judge_model.device)
     with torch.no_grad():
-        attention = model(**inputs, output_attentions=True).attentions[-1]
+        attention = judge_model(**inputs, output_attentions=True).attentions[-1]
     row = attention[0].mean(dim=0)[0].float().cpu().tolist()
     ids = inputs["input_ids"][0].tolist()
 
@@ -121,7 +134,7 @@ def attention_map(first, second):
     return tokens, weights
 
 
-def weakest_pair_attention(sentences, matrix):
+def weakest_pair_attention(sentences, matrix, device="cuda"):
     """Attention for the pair of answers that agree least."""
     scores = pair_scores(matrix)
     count = len(sentences)
@@ -129,5 +142,5 @@ def weakest_pair_attention(sentences, matrix):
         ((i, j) for i in range(count) for j in range(i + 1, count)),
         key=lambda pair: scores[pair[0]][pair[1]],
     )
-    tokens, weights = attention_map(sentences[first], sentences[second])
+    tokens, weights = attention_map(sentences[first], sentences[second], device)
     return {"pair": (first, second), "tokens": tokens, "weights": weights}

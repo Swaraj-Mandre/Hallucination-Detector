@@ -28,25 +28,25 @@ def verdict_for(agreement):
     }
 
 
-def package(question, answers, sentences, mode):
-    result = judge.judge(sentences)
+def package(question, answers, sentences, mode, device):
+    result = judge.judge(sentences, device)
     result.update({
         "question": question,
         "answers": answers,
         "sentences": sentences,
         "mode": mode,
         "verdict": verdict_for(result["agreement"]),
-        "focus": judge.weakest_pair_attention(sentences, result["matrix"]),
+        "focus": judge.weakest_pair_attention(sentences, result["matrix"], device),
     })
     return result
 
 
-def check_text(question, prompt_name=config.DEFAULT_PROMPT, temperature=config.TEMPERATURE):
-    answers = sampler.sample_answers(question, prompt_name, temperature)
-    return package(question, answers, answers, "text")
+def check_text(question, prompt_name=config.DEFAULT_PROMPT, temperature=config.TEMPERATURE, device="cuda"):
+    answers = sampler.sample_answers(question, prompt_name, temperature, device=device)
+    return package(question, answers, answers, "text", device)
 
 
-def check_image(image, question, temperature=config.VQA_TEMPERATURE):
-    answers = vision.sample_image_answers(image, question, temperature)
+def check_image(image, question, temperature=config.VQA_TEMPERATURE, device="cuda"):
+    answers = vision.sample_image_answers(image, question, temperature, device=device)
     sentences = [vision.as_sentence(answer) for answer in answers]
-    return package(question, answers, sentences, "image")
+    return package(question, answers, sentences, "image", device)

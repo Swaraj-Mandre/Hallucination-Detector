@@ -3,6 +3,7 @@
 import spaces  # must be imported before torch on ZeroGPU
 
 import json
+import time
 
 import gradio as gr
 
@@ -53,26 +54,54 @@ def clean_question(question):
     return question
 
 
-@spaces.GPU(duration=30)
+@spaces.GPU(duration=15)
+def gpu_task(task, *args):
+    return task(*args, device="cuda")
+
+
+def on_gpu_or_cpu(task, *args):
+    """
+    Try the free GPU first. It has a daily limit per visitor, so if it is refused
+    for any reason, the same models run on the CPU. Slower, but the check still works.
+    """
+    try:
+        return gpu_task(task, *args)
+    except Exception as error:  # noqa: BLE001
+        if not config.CPU_FALLBACK:
+            raise
+        print("GPU refused, using CPU:", str(error)[:120], flush=True)
+        gr.Info("The free GPU limit was reached, so this check is running on the CPU. It will take longer.")
+        started = time.time()
+        result = task(*args, device="cpu")
+        print("CPU run took %.1fs" % (time.time() - started), flush=True)
+        return result
+
+
+def text_check(question, prompt_name, temperature, device):
+    return ui.render(detector.check_text(question, prompt_name, temperature, device))
+
+
+def image_check(image, question, device):
+    return ui.render(detector.check_image(image, question, device=device))
+
+
 def run_text(question, prompt_name, temperature):
-    return ui.render(detector.check_text(clean_question(question), prompt_name, temperature))
+    return on_gpu_or_cpu(text_check, clean_question(question), prompt_name, temperature)
 
 
-@spaces.GPU(duration=30)
 def run_image(image, question):
     if image is None:
         raise gr.Error("Please add an image first.")
-    return ui.render(detector.check_image(image, clean_question(question)))
+    return on_gpu_or_cpu(image_check, image, clean_question(question))
 
 
-@spaces.GPU(duration=30)
 def run_painter(prompt):
     prompt = (prompt or "").strip()
     if not prompt:
         raise gr.Error("Describe the image you want first.")
     if any(word in prompt.lower() for word in config.BLOCKED_IMAGE_WORDS):
         raise gr.Error("This app only makes everyday test images. Please try another description.")
-    return vision.make_test_image(prompt)
+    return on_gpu_or_cpu(vision.make_test_image, prompt)
 
 
 with gr.Blocks(title="Crosscheck") as demo:

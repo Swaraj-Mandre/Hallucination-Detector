@@ -12,6 +12,10 @@ IMAGE_MODEL = "stabilityai/sd-turbo"
 # can move the image models to the CPU with VISION_DEVICE=cpu.
 VISION_DEVICE = os.getenv("VISION_DEVICE", "cuda")
 
+# The free GPU has a daily limit per visitor. On the hosted app a second copy of
+# each model stays on the CPU, so a check still works when the GPU is refused.
+CPU_FALLBACK = bool(os.getenv("SPACE_ID"))
+
 # Sampling (U1). Five answers at a fixed temperature. Hot enough for an unsure
 # model to wander, cool enough for a sure model to repeat itself.
 NUM_SAMPLES = 5

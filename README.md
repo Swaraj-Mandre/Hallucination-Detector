@@ -19,6 +19,9 @@ Generative AI mini project, problem P52. Swaraj Mandre, Roll No. 52.
 4. **Warn.** Below 0.5 the app shows "Likely hallucination". From 0.5 to 0.8 it shows
    "Unsure". At 0.8 and above it shows "Consistent".
 
+The hosted app runs on a free ZeroGPU Space. The free GPU has a daily limit per visitor, so
+if it is refused, the same models run on the Space's CPU and the check still finishes.
+
 Image questions work the same way. BLIP answers five times, each short answer becomes a
 sentence, and RoBERTa-MNLI compares them. SD-Turbo can make a test image if you have none.
 
